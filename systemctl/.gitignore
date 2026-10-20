@@ -1,0 +1,6 @@
+build/
+/infoide
+/*.img
+/*.iso
+/*.img.lock
+/*.iso.lock

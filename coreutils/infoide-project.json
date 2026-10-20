@@ -1,0 +1,399 @@
+{
+    "name":  "coreutils",
+    "version":  "0.1.1",
+    "cppflags":  [
+                     "-nostdinc",
+                     "-ffreestanding",
+                     "-fno-builtin",
+                     "-fno-stack-protector",
+                     "-fPIC",
+                     "-m64",
+                     "-mcmodel=small",
+                     "-mno-red-zone"
+                 ],
+    "cflags":  [
+                   "-std=c17",
+                   "-Os",
+                   "-Wall",
+                   "-Wextra"
+               ],
+    "cxxflags":  [
+                     "-std=c++20",
+                     "-fno-exceptions",
+                     "-fno-rtti",
+                     "-fno-use-cxa-atexit",
+                     "-fno-threadsafe-statics",
+                     "-nostdinc++",
+                     "-Os",
+                     "-Wall",
+                     "-Wextra"
+                 ],
+    "ldflags":  [
+                    "-nostdlib",
+                    "-nostartfiles",
+                    "-nodefaultlibs",
+                    "-Wl,--build-id=none,--hash-style=sysv",
+                    "-Wl,--no-as-needed"
+                ],
+    "asflags":  [
+
+                ],
+    "ldlibs":  [
+                   "gcc"
+               ],
+    "targets":  [
+                    {
+                        "name":  "cat",
+                        "sources":  [
+                                        "src/cat/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "chmod",
+                        "sources":  [
+                                        "src/chmod/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "chown",
+                        "sources":  [
+                                        "src/chown/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "cp",
+                        "sources":  [
+                                        "src/cp/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "echo",
+                        "sources":  [
+                                        "src/echo/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "file",
+                        "sources":  [
+                                        "src/file/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "find",
+                        "sources":  [
+                                        "src/find/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "grep",
+                        "sources":  [
+                                        "src/grep/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "kill",
+                        "sources":  [
+                                        "src/kill/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "killall",
+                        "sources":  [
+                                        "src/killall/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "login",
+                        "sources":  [
+                                        "src/login/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "logout",
+                        "sources":  [
+                                        "src/logout/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "ls",
+                        "sources":  [
+                                        "src/ls/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "mkdir",
+                        "sources":  [
+                                        "src/mkdir/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "mv",
+                        "sources":  [
+                                        "src/mv/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "passwd",
+                        "sources":  [
+                                        "src/passwd/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "pkill",
+                        "sources":  [
+                                        "src/pkill/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "ps",
+                        "sources":  [
+                                        "src/ps/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "rm",
+                        "sources":  [
+                                        "src/rm/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "rmdir",
+                        "sources":  [
+                                        "src/rmdir/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "sh",
+                        "sources":  [
+                                        "src/sh/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "sleep",
+                        "sources":  [
+                                        "src/sleep/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "sudo",
+                        "sources":  [
+                                        "src/sudo/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "touch",
+                        "sources":  [
+                                        "src/touch/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "tree",
+                        "sources":  [
+                                        "src/tree/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "who",
+                        "sources":  [
+                                        "src/who/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    },
+                    {
+                        "name":  "tar",
+                        "sources":  [
+                                        "src/tar/main.cc"
+                                    ],
+                        "libraries":  [
+                                          "c++",
+                                          "c",
+                                          "os-c++",
+                                          "osgui-c++"
+                                      ]
+                    }
+                ],
+    "install":  {
+                    "cat":  "/bin/cat",
+                    "chmod":  "/bin/chmod",
+                    "chown":  "/bin/chown",
+                    "cp":  "/bin/cp",
+                    "echo":  "/bin/echo",
+                    "file":  "/bin/file",
+                    "find":  "/bin/find",
+                    "grep":  "/bin/grep",
+                    "kill":  "/bin/kill",
+                    "killall":  "/bin/killall",
+                    "login":  "/bin/login",
+                    "logout":  "/bin/logout",
+                    "ls":  "/bin/ls",
+                    "mkdir":  "/bin/mkdir",
+                    "mv":  "/bin/mv",
+                    "passwd":  "/bin/passwd",
+                    "pkill":  "/bin/pkill",
+                    "ps":  "/bin/ps",
+                    "rm":  "/bin/rm",
+                    "rmdir":  "/bin/rmdir",
+                    "sh":  "/bin/sh",
+                    "sleep":  "/bin/sleep",
+                    "sudo":  "/bin/sudo",
+                    "touch":  "/bin/touch",
+                    "tree":  "/bin/tree",
+                    "who":  "/bin/who",
+                    "tar":  "/bin/tar"
+                }
+}
